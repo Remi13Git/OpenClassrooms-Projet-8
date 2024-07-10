@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="À propos| Rémi Hopsore" description="À propos de Rémi Hopsore">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="À propos"
+				tagline="Apprenez-en davantage sur mes expériences et mon parcours."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/dev.jpeg"
+					alt="Rémi au travail devant un ordi"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Parcours</h2>
+				<div class="content">
+					<p>
+						Après avoir exercé le métier de coach sportif pendant plus d’un an en salle de sport et en freelance,
+						j’ai pris la décision de me consacrer à 100% à ma passion de toujours : 
+						l’informatique.<br><br>
+					</p>
+					<p>
+						J'ai commencé mes premiers pas dans le développement web en mars 2022 lorsque j'ai 
+						eu besoin de créer un site e-commerce pour mon entreprise de coaching sportif. 
+						Étant très friand du monde de l'informatique, j'ai décidé de tout apprendre en 
+						partant de zéro et sans choisir la facilité des CMS comme Wordpress ou Wix.<br><br>
+					</p>
+					<p>
+						J'ai ensuite continué cette activité de création de site web en parallèle de mes 
+						accompagnements sportifs, puis en octobre 2023 j'ai décidé de consacrer 
+						l'entièreté de mon temps à cette activité. 
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Diplômes</h2>
+				<div class="content">
+					<p>Bac +2 Développeur Web (RNCP)<br>
+						Bac +3 STAPS </p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Langages & Technologies</h2>
+				<div class="content">
+					<p>
+					Html<br>
+					Css<br>
+					Javascript<br>
+					Node.js<br>
+					Python<br>
+					Angular.js<br>
+					React.js<br>
+					Astro<br>
+					Express<br>
+					MongoDB<br>
+					Git<br>
+					Figma<br>
+					Notion<br>
+					Gimp<br>
+					Postman<br>
+					Swagger<br>
+					Selenium<br>
+
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
