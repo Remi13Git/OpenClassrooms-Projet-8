@@ -23,7 +23,7 @@ Ce site m'a permis d'explorer Angular.js pour la première fois. J'ai donc dû d
 - Utilisation de la balise HTML Video
 - Intégration du scroll auto dans une section spécifique
 
-#### Technologie utilisées
+#### Technologies utilisées
 
 - Html
 - Css

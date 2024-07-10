@@ -23,7 +23,7 @@ Ce site m'a permis d'explorer plus en profondeur l'expérience utilisateur et am
 - Optimisation du SEO et de l'accessibilité 
 - Mise en ligne d'un site web
 
-#### Technologie utilisées
+#### Technologies utilisées
 
 - Html
 - Css

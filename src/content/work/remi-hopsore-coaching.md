@@ -21,7 +21,7 @@ Ce site m'a permis de découvrir pour la première fois le monde du code à trav
 - Optimisation du SEO et de l'accessibilité 
 - Mise en ligne d'un site web
 
-#### Technologie utilisées
+#### Technologies utilisées
 
 - Html
 - Css

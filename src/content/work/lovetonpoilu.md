@@ -22,7 +22,7 @@ Ce site m'a permis d'explorer la partie backend d'un site internet ainsi que la 
 - Gestion et interaction avec une base de données externe
 - Intégration de solution de paiement
 
-#### Technologie utilisées
+#### Technologies utilisées
 
 - Html
 - Css
